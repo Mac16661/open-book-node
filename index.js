@@ -6,7 +6,7 @@ require('dotenv').config();
 
 const port = 3000;
 
-const dbUrl = "mongodb+srv://admin:PCxO4j1z6z6mdcfv@cluster0.aow0z.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const dbUrl = process.env.DB_URL
 
 
 app.use(cors({origin: true, credentials: true}));
